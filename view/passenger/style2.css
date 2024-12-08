@@ -1,0 +1,203 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+/* Booking */
+#book-bod {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    background: #103166;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.book-head h1 {
+    color: #FDBE34;
+    font-size: 2.5em;
+    margin: 0;
+    padding-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.book-head img {
+    padding-top: 10%;
+    height: 40px;
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.logout-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.book-cont {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    height: 600px;
+    overflow-y: auto;
+    margin-top: 50px !important;
+}
+
+.ride-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.ride-item {
+    background-color: #F2F7FF;
+    border-radius: 10px;
+    border-color: #007BFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ride-info h2 {
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+.ride-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #103166;
+}
+
+.book-btn {
+    padding: 10px 15px;
+    background-color: #0071CE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    background-color: #77ABE2;
+}
+
+/* Booking Details Body */
+#details-bod {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #F2F7FF;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+/* Header */
+.book-head {
+    background-color: #103166;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.book-cont {
+    padding: 20px;
+    margin-top: 160px;
+    text-align: center;
+}
+
+/* Form styles for filtering rides */
+form {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+form label,
+form select,
+form button {
+    font-size: 16px;
+    margin: 0 10px 10px 0;
+}
+
+/* Ride list grid layout */
+.ride-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for individual ride items */
+.ride-item {
+    background-color: #f5faff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ride-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Book button */
+.book-btn {
+    background-color: #0071CE;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #005bb5;
+}
