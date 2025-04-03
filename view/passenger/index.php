@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
     <?php
 
     if (isset($_POST["submit"])) {
@@ -44,6 +44,7 @@
       }
     }
     ?>
+    
     <div class="left-section">
       <div class="promo-content">
         <img src="../admin/assets/assets/logo.png" alt="GoGora Logo" class="promo-logo">
